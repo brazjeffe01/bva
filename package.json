@@ -1,0 +1,23 @@
+{
+  "name": "pj_boundary_value_analysis",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido com Javascript/Nodejs utilizando a técnica de testes chamada de BVA (Bounday Value Analysis) ou AVL (Análise de Valor Limite)",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest --run --reporter verbose"
+  },
+  "keywords": [
+    "Projeto",
+    "Javascript",
+    "Nodejs",
+    "Testes",
+    "Nodejs"
+  ],
+  "author": "Jefferson Braz",
+  "license": "ISC",
+  "devDependencies": {
+    "readline-sync": "^1.4.10",
+    "vitest": "^1.1.0"
+  }
+}
