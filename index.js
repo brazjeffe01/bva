@@ -9,7 +9,7 @@ const exp = () => {
     console.log('Valor Limite Inicial - 1, Valor Limite Inicial, Valor Limite Inicial +1, Valor Limite Final -1, Valor Limite Final, Valor Limite Final +1\n')
 }
 
-const bva = (vi, vf) => {
+export const bva = (vi, vf) => {
 
     if(vi > vf) {
         console.log('Não foi possível prosseguir pois valor inicial é maior que o valor final.')
@@ -25,7 +25,8 @@ const bva = (vi, vf) => {
         const vfPlus = +vf + 1
         const valores = [viMinus, vi, viPlus,vfMinus, vf, vfPlus]
         
-        console.log('Valores de entrada utilizados: Valor inicial: 200, Valor Final: 500.\nResultado: ' + valores)
+        console.log('Valores de entrada utilizados: Valor inicial: 200, Valor Final: 500.\nResultado: ')
+        console.log(valores)
 
     }
 }
@@ -33,4 +34,4 @@ const bva = (vi, vf) => {
 apr()
 
 bva(200,500)
-
+console.log(typeof bva)
