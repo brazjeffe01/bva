@@ -24,7 +24,7 @@ Via terminal, rodar o comando ***node index.js***
 
 ### Rodar o módulo de testes (index.text.js)
 
-Via terminal, rodar o comando ***vitest --run --reporter verbose*** (Obs. necessária instalação do framework *Vitest* para execução dos testes, passo a passo para a instalação [aqui](https://vitest.dev/guide/)
+Via terminal, rodar o comando ***npm test*** (Obs. necessária instalação do framework *Vitest* e configuração dos scripts do arquivo package.json, para execução dos testes, passo a passo para a instalação [aqui](https://vitest.dev/guide/)
 
 ### Observações
 
