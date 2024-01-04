@@ -11,9 +11,14 @@ const exp = () => {
 
 export const bva = (vi, vf) => {
 
+    if ((typeof vi == 'string') || (typeof vf == 'string')) {
+        return console.log('Não foi possível prosseguir pois valores informados não são números.')
+        
+    }
+
     if(vi > vf) {
-        console.log('Não foi possível prosseguir pois valor inicial é maior que o valor final.')
-        return
+        return console.log('Não foi possível prosseguir pois valor inicial é maior que o valor final.')
+        
     }
 
     if((vf - vi) <= 2 && (vf - vi) >= 0) {
@@ -28,10 +33,11 @@ export const bva = (vi, vf) => {
         console.log('Valores de entrada utilizados: Valor inicial: 200, Valor Final: 500.\nResultado: ')
         console.log(valores)
 
+        return valores
+
     }
 }
 
 apr()
 
 bva(200,500)
-console.log(typeof bva)

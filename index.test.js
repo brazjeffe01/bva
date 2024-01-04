@@ -12,7 +12,7 @@ describe('bva()', () => {
         const result = bva(vi, vf)
     
         //Assert
-        expect(result).not.toBeNull()
+        expect(result).toStrictEqual([ 99,100,101,199,200,201 ])
     })
 
     it('não deve prosseguir para calculos caso valores passados sejam strings', () => {
@@ -20,8 +20,16 @@ describe('bva()', () => {
         const vf = 'llhlhlh'
 
         const result = bva(vi,vf)
-        console.log(typeof result)
 
-        expect(result).toBeNaN()
+        expect(result).toBeUndefined()
+    })
+
+    it('deve apresentar erro caso não seja passado nenhum valor para a função', () => {
+        const vi = ''
+        const vf = ''
+
+        const resultado = bva(vi,vf)
+
+        //expect(resultado).not.toThrow()
     })
 })
