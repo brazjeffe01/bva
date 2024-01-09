@@ -23,13 +23,4 @@ describe('bva()', () => {
 
         expect(result).toBeUndefined()
     })
-
-    it('deve apresentar erro caso não seja passado nenhum valor para a função', () => {
-        const vi = ''
-        const vf = ''
-
-        const resultado = bva(vi,vf)
-
-        //expect(resultado).not.toThrow()
-    })
 })
