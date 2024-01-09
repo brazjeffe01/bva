@@ -1,5 +1,3 @@
-# *Em Construção...* ⏱
-
 # Boundary Value Analysis (BVA)
 Projeto que ilustra uma das Técnicas de Testes de Software chamada Boundary Value Analysis (BVA), ou Análise de Valor Limite.
 
@@ -28,5 +26,5 @@ Via terminal, rodar o comando ***npm test*** (Obs. necessária instalação do f
 
 ### Observações
 
-- Testes untários ainda em implementação.
 - Lógica que continha o código para a entrada de dados do usuário foi substituída por dados fixos até eu encontrar alguma forma de ler os dados do usuário além da biblioteca readline-sync kkkkk
+- Testes unitários ficaram bem simples, tenho a intenção de aprimorá-los nos próximos projetos, ou quando eu descobrir uma solução pro ponto anterior ou volto pra colocar mais testes também.
