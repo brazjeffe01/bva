@@ -1,4 +1,4 @@
-// const readlineSync = require('readline-sync')
+const readlineSync = require('readline-sync')
 
 const apr = () => {
     console.log('-----------------------------------------\n----- BVA (BOUNDARY VALUE ANALYSIS) -----\n----------------------------------------- ')
@@ -10,17 +10,19 @@ const exp = () => {
     console.log('Exemplo: Dentro de uma range de valores entre 200 e 300, validamos quais são seus valores limites positivos e negativos, sempre utilizando a seguinte fórmula:')
     console.log('Valor Limite Inicial - 1, Valor Limite Inicial, Valor Limite Inicial +1, Valor Limite Final -1, Valor Limite Final, Valor Limite Final +1\n')
 }
+    
+// do {
+//     i = i + 1;
+//     result = result + i;
+//   } while (i < 5);
+
+ let valorInicial = readlineSync.questionInt('Qual o valor inicial? ')
+ let valorFinal = readlineSync.questionInt('E qual o valor final? ')
 
 function bva(vi, vf) {
 
-    if ((typeof vi == 'string') || (typeof vf == 'string')) {
-        return console.log('Não foi possível prosseguir pois valores informados não são números.')
-        
-    }
-
     if(vi > vf) {
         return console.log('Não foi possível prosseguir pois valor inicial é maior que o valor final.')
-        
     }
 
     if((vf - vi) <= 2 && (vf - vi) >= 0) {
@@ -35,13 +37,13 @@ function bva(vi, vf) {
         console.log('Valores de entrada utilizados: Valor inicial: 200, Valor Final: 500.\nResultado: ')
         console.log(valores)
 
-        return valores
+        // return valores
 
     }
 }
 
 apr()
 
-bva(200,500)
+bva(valorInicial, valorFinal)
 
 module.exports = bva
