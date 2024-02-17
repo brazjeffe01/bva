@@ -1,5 +1,6 @@
-import { it, describe, expect } from 'vitest'
-import { apr, exp, bva } from './index.js'
+const bva = require('./index.js')
+
+
 
 describe('bva()', () => {
 

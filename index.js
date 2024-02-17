@@ -1,3 +1,5 @@
+// const readlineSync = require('readline-sync')
+
 const apr = () => {
     console.log('-----------------------------------------\n----- BVA (BOUNDARY VALUE ANALYSIS) -----\n----------------------------------------- ')
     console.log('Esse é uma técnica de testes onde podemos validar quais valores são e não são aceitos dentro de um limite, com o intúito de aumentar a cobertura e diminiur a quantidade de dados.\n')
@@ -9,7 +11,7 @@ const exp = () => {
     console.log('Valor Limite Inicial - 1, Valor Limite Inicial, Valor Limite Inicial +1, Valor Limite Final -1, Valor Limite Final, Valor Limite Final +1\n')
 }
 
-export const bva = (vi, vf) => {
+function bva(vi, vf) {
 
     if ((typeof vi == 'string') || (typeof vf == 'string')) {
         return console.log('Não foi possível prosseguir pois valores informados não são números.')
@@ -41,3 +43,5 @@ export const bva = (vi, vf) => {
 apr()
 
 bva(200,500)
+
+module.exports = bva
