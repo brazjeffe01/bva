@@ -37,7 +37,7 @@ function bva(vi, vf) {
         console.log('Valores de entrada utilizados: Valor inicial: 200, Valor Final: 500.\nResultado: ')
         console.log(valores)
 
-        // return valores
+        return valores
 
     }
 }

@@ -1,9 +1,5 @@
 const bva = require('./index.js')
 
-
-
-describe('bva()', () => {
-
     it('deve calcular valores limites normalmente', () => {
         //Arrange
         const vi = 100
@@ -14,6 +10,7 @@ describe('bva()', () => {
     
         //Assert
         expect(result).toStrictEqual([ 99,100,101,199,200,201 ])
+
     })
 
     it('não deve prosseguir para calculos caso valores passados sejam strings', () => {
@@ -24,4 +21,3 @@ describe('bva()', () => {
 
         expect(result).toBeUndefined()
     })
-})
