@@ -3,15 +3,8 @@ const readline = require('readline')
 const rl = readline.createInterface(
     process.stdin, process.stdout)
 
-let num = 15
-
-rl.question('What is your age? ', (age) => {
-    num = age
-    rl.close()
-})
-
-console.log('O que foi digitado: ' + num)
-
+let vi = 0
+let vf = 0
 
 const apr = () => {
     console.log('-----------------------------------------\n----- BVA (BOUNDARY VALUE ANALYSIS) -----\n----------------------------------------- ')
@@ -29,7 +22,17 @@ const exp = () => {
 //     result = result + i;
 //   } while (i < 5);
 
+let perguntaUm = () => {
+    rl.question('Digite um número: ', (valor) => {
+        console.log(`O valor digitado foi: ${valor}`)
+        rl.pause()
+    })
+}
+
 function bva(vi, vf) {
+
+    perguntaUm()
+    exp()
 
     if(vi > vf) {
         return console.log('Não foi possível prosseguir pois valor inicial é maior que o valor final.')
@@ -52,8 +55,5 @@ function bva(vi, vf) {
     }
 }
 
-apr()
-
-//bva(valorInicial, valorFinal)
-
+bva(100,200)
 module.exports = bva
