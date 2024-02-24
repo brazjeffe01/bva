@@ -57,3 +57,38 @@ function bva(vi, vf) {
 
 bva(100,200)
 module.exports = bva
+
+/*
+Exemplo de callback
+
+function exibir(num) {
+    console.log("A operação resultou em: " + num)
+}
+
+function soma(a, b, callback) {
+    let op = a + b
+    callback(op)
+}
+
+soma(2, 2, exibir)
+*/
+
+/*
+Exemplo de Promise
+
+let p = new Promise((resolve,reject) => {
+    let a = 1 + 1
+    if (a == 2) {
+        resolve('Success')
+    } else {
+        reject('Failure')
+    }
+})
+
+p.then((message) => {
+    console.log('This is in the then ' + message)
+}).catch((err) => {
+    console.log('This is the catch ' + err)
+})
+
+*/
